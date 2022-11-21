@@ -1,9 +1,7 @@
 import chalk from "chalk";
-// import inquirer from "inquirer";
-// import gradient from "gradient-string";
+import inquirer from "inquirer";
 import chalkAnimation from "chalk-animation";
-//import { createSpinner } from "nanospinner";
-console.clear();
+import UserInput from "./interfaces/user-Input.js";
 
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
@@ -20,5 +18,51 @@ const welcome = async () => {
       So get all the questions right...
     `);
 };
+console.clear();
+await welcome();
 
-welcome();
+const validateInput = (input: string) => {
+  const valid = !isNaN(parseFloat(input));
+  return valid || "Please enter a number";
+};
+
+const filterInput = (input: string) => {
+  return Number.isNaN(input) || Number(input) <= 0 ? "" : Number(input);
+};
+
+const promptQuestions = async () => {
+  const result: UserInput = await inquirer.prompt([
+    {
+      type: "list",
+      name: "operation",
+      message: "Choose an operation:",
+      choices: [
+        "Add",
+        "Subtract",
+        "Multiply",
+        "Divide",
+        "Exponentiation",
+        "Modulus",
+      ],
+      filter: (val: string) => val.toUpperCase(),
+    },
+    {
+      type: "number",
+      name: "first_num",
+      message: "Enter a first number:",
+      default() {
+        return null;
+      },
+      validate: validateInput,
+      filter: filterInput,
+    },
+    {
+      type: "number",
+      name: "second_num",
+      message: "Enter a second number:",
+      validate: validateInput,
+      filter: filterInput,
+    },
+  ]);
+};
+await promptQuestions();
