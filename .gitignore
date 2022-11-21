@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+/node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/dist
+

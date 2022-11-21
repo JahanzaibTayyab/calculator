@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["ES2022"],
+    "target": "ESNext",
     "module": "NodeNext",
-    "moduleResolution": "node",
-    "target": "ES2022",
+    "moduleResolution": "NodeNext",
     "allowJs": true,
     "sourceMap": true,
     "baseUrl": ".",
@@ -14,7 +13,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "**/__tests__/*"],
   "include": ["./src/**/*"],
   "compileOnSave": true
 }
