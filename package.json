@@ -19,7 +19,7 @@
   "homepage": "https://github.com/JahanzaibTayyab/calculator",
   "license": "ISC",
   "bin": {
-    "cli-calculator": "dist/index.js"
+    "jt-cli-calculator-": "dist/index.js"
   },
   "devDependencies": {
     "@types/chalk-animation": "^1.6.1",
