@@ -1,5 +1,5 @@
 {
-  "name": "calculator",
+  "name": "cli-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -12,8 +12,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jahanzaib Tayyab <jtayyab204@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/JahanzaibTayyab/calculator/issues"
+  },
+  "homepage": "https://github.com/JahanzaibTayyab/calculator",
   "license": "ISC",
+  "bin": {
+    "cli-calculator": "dist/index.js"
+  },
   "devDependencies": {
     "@types/chalk-animation": "^1.6.1",
     "@types/gradient-string": "^1.1.2",

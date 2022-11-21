@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import { createSpinner } from "nanospinner";
 import chalk from "chalk";
 const spinner = createSpinner("").start();

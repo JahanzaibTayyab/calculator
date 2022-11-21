@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import { createSpinner } from "nanospinner";
 import chalk from "chalk";
 import UserInput from "./interfaces/user-Input.js";

@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 type Operation =
   | "ADD"
   | "SUBTRACT"
