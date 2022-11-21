@@ -1,5 +1,5 @@
 {
-  "name": "cli-calculator",
+  "name": "@jt/calculator",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/JahanzaibTayyab/calculator",
   "license": "ISC",
   "bin": {
-    "@jt/calculator-": "dist/index.js"
+    "@jt/calculator": "dist/index.js"
   },
   "devDependencies": {
     "@types/chalk-animation": "^1.6.1",
