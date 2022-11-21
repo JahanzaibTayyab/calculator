@@ -1,7 +1,7 @@
 {
   "name": "@jt/calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calculator app with typescript",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/JahanzaibTayyab/calculator",
   "license": "ISC",
   "bin": {
-    "@jt/calculator": "dist/index.js"
+    "calculator": "dist/index.js"
   },
   "devDependencies": {
     "@types/chalk-animation": "^1.6.1",
@@ -36,5 +36,9 @@
     "gradient-string": "^2.0.2",
     "inquirer": "^9.1.4",
     "nanospinner": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JahanzaibTayyab/calculator.git"
   }
 }
